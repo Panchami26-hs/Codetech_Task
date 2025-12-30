@@ -1,0 +1,93 @@
+Multi-Cloud Architecture Demo (AWS + GCP)
+
+ Project Overview
+This project demonstrates a **multi-cloud architecture** where the frontend and backend are deployed independently and communicate using REST APIs.  
+The frontend simulates deployment on **Google Cloud**, while the backend API simulates deployment on **AWS**.
+
+---
+
+ Objective
+To showcase:
+- Cross-cloud communication
+- REST API interaction
+- Backend–frontend decoupling
+- Multi-cloud interoperability
+
+---
+
+ Architecture Overview
+
+- **Frontend**
+  - HTML + JavaScript
+  - Served using Python HTTP server
+  - Simulates Google Cloud hosting
+
+- **Backend**
+  - Python Flask REST API
+  - Flask-CORS enabled
+  - Simulates AWS backend service
+
+- **Communication**
+  - REST APIs (HTTP POST/GET)
+  - JSON data exchange
+
+---
+
+ Technologies Used
+
+- Python 3.8
+- Flask
+- Flask-CORS
+- HTML
+- JavaScript
+- VS Code
+
+---
+
+ Project Structure
+
+multi-cloud-demo/
+│
+├── aws-backend/
+│ └── app.py
+│
+├── frontend/
+│ └── index.html
+
+1. Navigate to backend folder:
+   ```bash
+   cd aws-backend
+Install dependencies:
+
+bash
+Copy code
+pip install flask flask-cors
+Run backend server:
+
+bash
+Copy code
+python app.py
+Backend will run on:
+
+cpp
+Copy code
+http://127.0.0.1:5000
+
+2. Frontend Setup (GCP Simulation)
+Navigate to frontend folder:
+
+bash
+Copy code
+cd frontend
+Start HTTP server:
+
+bash
+Copy code
+python -m http.server 8000
+Open browser:
+
+bash
+Copy code
+http://localhost:8000/index.html
+
+
